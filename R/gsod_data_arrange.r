@@ -16,7 +16,7 @@ gsod_data_arrange=function(gsod_staz) {
                                 gsod_staz$Tmin <- toCelsius(gsod_staz$MIN, digits = 1)
                                 gsod_staz$Prec <-inch2Millimeter(gsod_staz$PRCP, digits = 1)
                                 gsod_staz$DEWP <- toCelsius(gsod_staz$DEWP, digits = 1)
-                                gsod_staz$RH <- 100*(exp((17.625*gsod_staz$DEWP)/(243.04+gsod_staz$DEWP))/exp((17.625*gsod_staz$TEMP)/(243.04+gsod_staz$TEMP)))
-                                gsod_staz[c("YEARMODA","Tmed","Tmax","Tmin","RH","Prec","WDSP","VISIB","SLP")]   
+                                gsod_staz$pressvap <- 100*(exp((17.625*gsod_staz$DEWP)/(243.04+gsod_staz$DEWP))/exp((17.625*gsod_staz$TEMP)/(243.04+gsod_staz$TEMP)))
+                                gsod_staz=gsod_staz[c("YEARMODA","Tmed","Tmax","Tmin","pressvap","Prec","WDSP","VISIB","SLP")]   
                                 return(gsod_staz) 
                           }
