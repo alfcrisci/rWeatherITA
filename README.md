@@ -1,2 +1,2 @@
 # rWeatherITA
-R package for daily weather data retrieval.
+R packages for  italian daily weather data retrieval.
