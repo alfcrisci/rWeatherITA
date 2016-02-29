@@ -11,8 +11,8 @@
 #' @references  Regione Toscana CRF Centro regionale Funzionale di Monitoraggio Meteo Meteorologico \email{http://www.sir.toscana.it/}
 #' @keywords  weather, data,opendata,regione toscana
 #'
-#'
-#' @import xts  sp
+#' @importFrom lubridate dmy 
+#' @import xts  sp 
 #' @export
 
 
