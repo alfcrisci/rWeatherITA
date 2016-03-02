@@ -19,7 +19,7 @@ get_daily_weather=function(typestaz="WU-STAZ",startdate,endate,idstaz="LIRQ") {
 if (typestaz == "WU-PWS") 
                        { diffdate=abs(as.numeric(as.Date(endate)-as.Date(startdate)))
                        
-                        if(diffdate > 365) {stop("Temporal range of data retrieval is to large!")}
+                        if(diffdate > 365) {stop("Temporal range of data retrieval is too large!")}
                         
                         daily <-getSummarizedWeather(idstaz, startdate,endate, station_type = "id",opt_all_columns = TRUE)
                         
