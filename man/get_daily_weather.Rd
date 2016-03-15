@@ -4,14 +4,14 @@
 \alias{get_daily_weather}
 \title{get_daily_weather}
 \usage{
-get_daily_weather(typestaz = "WU-STAZ", startdate, endate, idstaz = "LIRQ")
+get_daily_weather(typestaz = "WU-STAZ", year, idstaz = "LIRQ")
 }
 \arguments{
 \item{typestaz}{Character Type of data "WU-STAZ" done by ICAO code of airport,  or "WU-PWS" by id of personal weather station.}
 
-\item{startdate}{Character Initial date of period in "YYYY-MM-DD" format.}
-
 \item{idstaz}{Character  Weather station ID or code for identification}
+
+\item{startdate}{Character Initial date of period in "YYYY-MM-DD" format.}
 
 \item{enddate}{Character Final date of period in "YYYY-MM-DD" format.}
 }

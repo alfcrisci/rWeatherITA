@@ -9,18 +9,19 @@
 #' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
 #' @keywords  weather, data,daily,wunderground,weatherData.
 #'
-#' @import weatherData
+#' @import weatherData, rvest
 #' @export
 
 
 
-get_daily_weather=function(typestaz="WU-STAZ",startdate,endate,idstaz="LIRQ") {
-
+get_daily_weather=function(typestaz="WU-STAZ",year,idstaz="LIRQ") {
+  startdate=as.Date(paste0(year,"-01-01"));
+  enddate=as.Date(paste0(year,"-12-31"));
+  
 if (typestaz == "WU-PWS") 
-                       { diffdate=abs(as.numeric(as.Date(endate)-as.Date(startdate)))
-                       
-                        if(diffdate > 365) {stop("Temporal range of data retrieval is too large!")}
-                        
+                       { 
+  
+  
                         daily <-getSummarizedWeather(idstaz, startdate,endate, station_type = "id",opt_all_columns = TRUE)
                         
                         weather=data.frame(data=as.Date(daily$Date),
