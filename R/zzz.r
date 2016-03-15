@@ -4,6 +4,7 @@
 }
 
 .onLoad <- function(libname, pkgname) {
-require(GSODTools)
+  if(!require(GSODTools)) {devtools::install_github("environmentalinformatics-marburg/GSODTools")}
+  library(GSODTools)
 
 }

@@ -6,7 +6,7 @@ Date: 2016-02-29
 Author: Alfonso Crisci <a.crisci@sibimet.cnr.it>
 Maintainer: Alfonso Crisci <a.crisci@ibimet.cnr.it>
 Description: From different source of daily weather this package facilitate the retrieval of summarized daily data for Italy.
-Imports:weatherData,xts,sp,lubridate
+Imports:weatherData,xts,sp,lubridate,R.utils
 License: GPL-2
 LazyData: TRUE
 RoxygenNote: 5.0.1

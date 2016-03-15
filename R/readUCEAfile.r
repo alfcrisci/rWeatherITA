@@ -7,7 +7,8 @@
 #' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
 #' @keywords  weather, data,daily,UCEA
 #'
-#' @import R.utils,lubridate
+#' @import R.utils
+#' @import lubridate
 #' @export
 
 

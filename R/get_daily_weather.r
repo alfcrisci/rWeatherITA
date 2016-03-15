@@ -9,7 +9,7 @@
 #' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
 #' @keywords  weather, data,daily,wunderground,weatherData.
 #'
-#' @import weatherData, rvest
+#' @import weatherData
 #' @export
 
 
