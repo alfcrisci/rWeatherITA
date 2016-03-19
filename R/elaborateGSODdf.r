@@ -20,7 +20,7 @@ elaborateGSODdf=function(temp_daily) {
   temp_daily$tmed <- GSODTools::toCelsius(temp_daily$TEMP, digits = 1)
   temp_daily$tmax <- GSODTools::toCelsius(temp_daily$MAX, digits = 1)
   temp_daily$tmin <- GSODTools::toCelsius(temp_daily$MIN, digits = 1)
-  temp_daily$prec <-inch2Millimeter(temp_daily$PRCP, digits = 1)
+  temp_daily$prec <-inch2millimeter(temp_daily$PRCP, digits = 1)
   temp_daily$DEWP <- GSODTools::toCelsius(temp_daily$DEWP, digits = 1)
   temp_daily$rhum <- 100*(exp((17.625*temp_daily$DEWP)/(243.04+temp_daily$DEWP))/exp((17.625*temp_daily$tmed)/(243.04+temp_daily$tmed)))
   temp_daily$slp=temp_daily$SLP
