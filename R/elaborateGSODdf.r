@@ -25,8 +25,8 @@ elaborateGSODdf=function(temp_daily) {
   temp_daily$rhum <- 100*(exp((17.625*temp_daily$DEWP)/(243.04+temp_daily$DEWP))/exp((17.625*temp_daily$tmed)/(243.04+temp_daily$tmed)))
   temp_daily$slp=temp_daily$SLP
   temp_daily$prec[which(temp_daily$PRCPFLAG=="I")]=NA
-  temp_daily$vmed=knots2mps(temp_daily$WDSP,1)
-  temp_daily$vmax=knots2mps(temp_daily$MXSPD,1)
+  temp_daily$vmed=knots2ms(temp_daily$WDSP,1)
+  temp_daily$vmax=knots2ms(temp_daily$MXSPD,1)
   temp_daily=temp_daily[c("Date","tmed","tmax","tmin","rhum","DEWP","vmed","vmax","prec","slp")]
   return(temp_daily)
 }
