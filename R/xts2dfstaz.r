@@ -2,9 +2,12 @@
 #'
 #' @description Write and return data.frame object of xts object
 #'
-#' @return  Return   A data.frame of xts object.
+#' @param x xts object
+#' @param csvwrite logical write a csv file.
+#' 
+#' @return  Return   a data.frame of xts object.
 #' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
-#' @keywords data,xts
+#' @keywords data, xts
 #'
 #'
 #'
@@ -12,10 +15,10 @@
 
 
 
-xts2dfstaz=function(x,name,type="pluvio") {
+xts2dfstaz=function(x,csvwrite=FALSE) {
   data=rownames(x)
   stazdf=as.data.frame(x)
   rownames(stazdf)=NULL
-  write.csv(data.frame(date=data,stazdf),file=paste0(name,"_",type,".csv"),row.names = TRUE,quote=F)
+  if (csvwrite==T) {write.csv(data.frame(date=data,stazdf),file=paste0(name,"_",type,".csv"),row.names = TRUE,quote=F)}
   return(data.frame(date=data,stazdf))
 }

@@ -2,12 +2,12 @@
 #'
 #' @description Retrieve meteorological data from CRF Centro regionale Funzionale di Monitoraggio Meteo Meteorologico of Regione Toscana.
 #'
-#' @param  id  Weather station ID 
-#' @param  type    Type of data "termo" or "pluvio". Default id "pluvio".
-#' @param  output    Type of file to store data a) "json" b) "csv" c) "rds". Default id "json".
-#' @param  write    Type of file to store data a) "json" b) "csv" c) "rds". Default id "json".
+#' @param   id  Weather station ID 
+#' @param   type    Type of data "termo" or "pluvio". Default id "pluvio".
+#' @param   output    Type of file to store data a) "json" b) "csv" c) "rds". Default id "json".
+#' @param   write    Type of file to store data a) "json" b) "csv" c) "rds". Default id "json".
 #' @return  Return   xts Data are returned as xts time series object.
-#' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
+#' @author  Istituto di Biometeorologia Firenze Italy   \email{a.crisci@@ibimet.cnr.it}.
 #' @references  Regione Toscana CRF Centro regionale Funzionale di Monitoraggio Meteo Meteorologico \email{http://www.sir.toscana.it/}
 #' @keywords  weather, data,opendata,regione toscana
 #'

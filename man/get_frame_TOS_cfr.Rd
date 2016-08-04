@@ -4,11 +4,13 @@
 \alias{get_frame_TOS_cfr}
 \title{get_frame_TOS_cfr}
 \usage{
-get_frame_TOS_cfr(id = "TOS01002085", type = "pluvio", output = "json",
-  write = TRUE)
+get_frame_TOS_cfr(query = "json_stations")
+}
+\arguments{
+\item{query}{Query to retrieve framework.}
 }
 \value{
-Return   json structure of available data.
+Return  data.fame Data from http://www.sir.toscana.it/archivio/
 }
 \description{
 Retrieve framework data from CRF Centro regionale Funzionale di Monitoraggio Meteo Meteorologico of Regione Toscana.

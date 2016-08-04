@@ -4,19 +4,24 @@
 \alias{knots2ms}
 \title{knots2ms}
 \usage{
-knots2ms(val, ...)
+knots2ms(val, decint = 2)
 }
 \arguments{
-\item{val}{Numeric Velocity of wind in meterstosecond.}
+\item{val}{numeric: Value in knots.}
+
+\item{decint}{integer: Decimal for rounding. Default is 2.}
+
+\item{val}{numeric Velocity of wind in meteronsecond.}
 }
 \value{
-Return   Numeric
+Return   numeric
 }
 \description{
-Return  ms velocity from knots value.
+Return  metertoseconds velocity from knots value.
 }
 \author{
 Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@ibimet.cnr.it}.
 }
 \keyword{GSOD}
 \keyword{data}
+

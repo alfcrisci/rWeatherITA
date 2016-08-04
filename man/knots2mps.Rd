@@ -4,13 +4,17 @@
 \alias{knots2mps}
 \title{knots2mps}
 \usage{
-knots2mps(val, ...)
+knots2mps(val, decint = 2)
 }
 \arguments{
-\item{val}{Numeric Velocity of wind in knots.}
+\item{val}{numeric: Value in inches.}
+
+\item{decint}{integer: Decimal for rounding. Default is 2.}
+
+\item{val}{numeric Velocity of wind in knots.}
 }
 \value{
-Return   Numeric
+Return   Numeric value in meterOnsecond.
 }
 \description{
 Return  mps velocity from knots value.

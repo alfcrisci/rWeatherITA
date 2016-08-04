@@ -4,10 +4,15 @@
 \alias{xts2dfstaz}
 \title{xts2dfstaz}
 \usage{
-xts2dfstaz(x, name, type = "pluvio")
+xts2dfstaz(x, csvwrite = FALSE)
+}
+\arguments{
+\item{x}{xts object}
+
+\item{csvwrite}{logical write a csv file.}
 }
 \value{
-Return   A data.frame of xts object.
+Return   a data.frame of xts object.
 }
 \description{
 Write and return data.frame object of xts object
@@ -15,5 +20,6 @@ Write and return data.frame object of xts object
 \author{
 Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@ibimet.cnr.it}.
 }
-\keyword{data,xts}
+\keyword{data,}
+\keyword{xts}
 

@@ -1,16 +1,18 @@
 #' retrieveGSOD
 #'
-#' @description Download meteorological data from GSOD as  gzip files form.  
-#' @param  usaf  Character  USAF code of GSOD Global Summary of Daily climatic data.
-#' @param  WBAN  Character  Another string for file naming.
-#' @param  start_year  Numeric Starting Year of data retrieval.
-#' @param  end_year  Numeric  Ending Year of data retrieval.
-#' @param  dst  Character  Path of retrieved data
+#' @description Download meteorological data from GSOD as  gzip files form.
+#'   
+#' @param  usaf  character  USAF code of GSOD Global Summary of Daily climatic data.
+#' @param  WBAN  character  Another string for file naming.
+#' @param  start_year  numeric Starting Year of data retrieval.
+#' @param  end_year  numeric  Ending Year of data retrieval.
+#' @param  dsn  character  Path of retrieved data
 #' @return  Return   data.frame Data are returned as R data.frame object.
 #' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
 #' @keywords  weather data, daily value , GSOD.
 #'
 #' @export
+#' 
 #' 
 #' 
 #' 

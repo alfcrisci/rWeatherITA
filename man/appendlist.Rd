@@ -6,8 +6,13 @@
 \usage{
 appendlist(x, val)
 }
+\arguments{
+\item{x}{List to be updates.}
+
+\item{val}{Data updates.}
+}
 \value{
-Return   A data.frame of xts object.
+Return   R list object.
 }
 \description{
 Utility function to append element to a list.

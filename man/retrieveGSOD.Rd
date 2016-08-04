@@ -8,15 +8,15 @@ retrieveGSOD(usaf, WBAN = "99999", start_year = NA, end_year = NA,
   dsn = ".")
 }
 \arguments{
-\item{usaf}{Character  USAF code of GSOD Global Summary of Daily climatic data.}
+\item{usaf}{character  USAF code of GSOD Global Summary of Daily climatic data.}
 
-\item{WBAN}{Character  Another string for file naming.}
+\item{WBAN}{character  Another string for file naming.}
 
-\item{start_year}{Numeric Starting Year of data retrieval.}
+\item{start_year}{numeric Starting Year of data retrieval.}
 
-\item{end_year}{Numeric  Ending Year of data retrieval.}
+\item{end_year}{numeric  Ending Year of data retrieval.}
 
-\item{dst}{Character  Path of retrieved data}
+\item{dsn}{character  Path of retrieved data}
 }
 \value{
 Return   data.frame Data are returned as R data.frame object.

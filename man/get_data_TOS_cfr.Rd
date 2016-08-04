@@ -23,7 +23,7 @@ Return   xts Data are returned as xts time series object.
 Retrieve meteorological data from CRF Centro regionale Funzionale di Monitoraggio Meteo Meteorologico of Regione Toscana.
 }
 \author{
-Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@ibimet.cnr.it}.
+Istituto di Biometeorologia Firenze Italy   \email{a.crisci@ibimet.cnr.it}.
 }
 \references{
 Regione Toscana CRF Centro regionale Funzionale di Monitoraggio Meteo Meteorologico \email{http://www.sir.toscana.it/}

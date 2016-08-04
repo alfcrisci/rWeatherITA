@@ -4,19 +4,21 @@
 \alias{inch2millimeter}
 \title{inch2millimeter}
 \usage{
-inch2millimeter(val, ...)
+inch2millimeter(val, decint = 2)
 }
 \arguments{
-\item{val}{Value in inches.}
+\item{val}{numeric: Value in inches.}
+
+\item{decint}{integer: Decimal for rounding. Default is 2.}
 }
 \value{
-Return   Numeric value in millimeter.
+Return   numeric Value in millimeter.
 }
 \description{
 Return values in millimeter from inches. Is possible to set round. Function taken from GSODtools R package \url{https://zenodo.org/record/12217#.Vugi0V5VKlM}.
 }
 \author{
-Florian Detsch
+Alfonso Crisci.
 }
 \references{
 GSODtools R package \url{https://zenodo.org/record/12217#.Vugi0V5VKlM}.

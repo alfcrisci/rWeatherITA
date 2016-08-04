@@ -2,7 +2,10 @@
 #'
 #' @description Utility function to append element to a list.
 #'
-#' @return  Return   A data.frame of xts object.
+#' @param x List to be updates.
+#' @param val Data updates.
+#
+#' @return  Return   R list object.
 #' @author  Istituto di Biometeorologia Firenze Italy  Alfonso crisci \email{a.crisci@@ibimet.cnr.it}.
 #' @keywords  weather, data,opendata,regione toscana
 #'
