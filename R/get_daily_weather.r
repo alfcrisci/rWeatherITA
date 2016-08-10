@@ -22,7 +22,7 @@ if (typestaz == "WU-PWS")
                        { 
   
   
-                        daily <-getSummarizedWeather(idstaz, startdate,endate, station_type = "id",opt_all_columns = TRUE)
+                        daily <-getSummarizedWeather(idstaz, startdate,enddate, station_type = "id",opt_all_columns = TRUE)
                         
                         weather=data.frame(data=as.Date(daily$Date),
                                            max=daily$TemperatureHighC,
@@ -36,7 +36,7 @@ if (typestaz == "WU-PWS")
 else  (typestaz == "WU-STAZ") 
                        {
                               
-                        daily <-getSummarizedWeather(idstaz, startdate,endate,opt_all_columns = TRUE)
+                        daily <-getSummarizedWeather(idstaz, startdate,enddate,opt_all_columns = TRUE)
                         weather=data.frame(data=as.Date(daily$Date),
                                                 tmax=daily$Max_TemperatureC,
                                                 tmed=daily$Mean_TemperatureC,
