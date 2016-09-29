@@ -16,7 +16,7 @@
 #' 
 #' 
 #' 
-retrieveGSOD=function(usaf,WBAN="99999",start_year = NA, end_year = NA, dsn = ".") 
+retrieveGSOD=function(usaf,WBAN="99999",start_year = NA, end_year = NA, dsn = ".",myusername="",mypassword="") 
 {
   
   fls_gz <- sapply(start_year:end_year, function(year) {
@@ -28,7 +28,7 @@ retrieveGSOD=function(usaf,WBAN="99999",start_year = NA, end_year = NA, dsn = ".
       cat("File", dlfile, "already exists. Proceeding to next file... \n")
     }
     else {
-      try(download.file(dlurl, dlfile), silent = FALSE)
+          try(R.utils::downloadFile(dlurl, dlfile, username = myusername, password =mypassword))
     }
     return(dlfile)  })
   
